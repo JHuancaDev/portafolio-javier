@@ -1,0 +1,68 @@
+.card-modo {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: slategray;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    color: #E0E0E0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    gap: 1rem;
+}
+
+.info-proyecto {
+    margin: 1rem 0 1rem 2rem;
+    display: block;
+    overflow: hidden;
+}
+
+.img_herramientas {
+    height: 3rem;
+    background-color: #E0E0E0;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+    .info {
+        display: block;
+    }
+
+    .info-proyecto {
+        margin-left: 1rem;
+
+    }
+    a {
+        display: block;
+        width: 90%;
+        height: 100%;
+    }
+    
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,50 @@
+
+h2{
+    color: #BB86FC;
+    text-align: center;
+    margin-top: 2rem;
+}
+nav{
+    border-radius: .5rem;
+}
+.nav-link {
+    position: relative;
+    overflow: hidden;
+  }
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #03DAC6; /* o el color que quieras para tu línea */
+    transition: width 0.3s ease-in-out;
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+footer {
+  position: top;
+  top: 0cap;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.svg-image{
+  display: inline-flex;
+  align-items: center;
+  color: #E0E0E0;
+}
+svg{
+  height: 2rem;
+  width: 2rem;
+  margin: 0 .7rem 0 .7rem;
+  background-color: #E0E0E0;
+  border-radius: .4rem;
+}

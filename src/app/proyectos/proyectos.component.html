@@ -1,0 +1,22 @@
+<div class="container mt-3  ">
+    <h2>Proyectos</h2>
+    <div *ngIf="proyectos.length === 0" class="no-datos">
+        <p>Por el momento no hay datos.</p>
+    </div>
+    <div *ngFor="let proyecto of proyectos" class="info">
+        <a href={{proyecto.linkGithub}}>
+            <div class="card-modo">
+                    <img class="" src={{proyecto.linkImagen}} alt="">
+            </div>
+        </a>
+        <div class="info-proyecto">
+            <div class="">
+                <h3>{{proyecto.titulo}}</h3>
+                <p>{{proyecto.descripcion}}</p>
+                <p>Herramientas:</p>
+                <p>{{proyecto.tecnologiasUsadas}}</p>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

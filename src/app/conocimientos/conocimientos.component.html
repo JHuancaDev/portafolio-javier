@@ -1,0 +1,15 @@
+<div class="container mt-3  ">
+    <h2>Lenguajes</h2>
+    <div *ngIf="lenguajes.length === 0" class="no-datos">
+        <p>Por el momento no hay datos a mostrar.</p>
+    </div>
+    <div class="card-container">
+        <div *ngFor="let lenguaje of lenguajes" class="card card-modo">
+            <img src="{{lenguaje.imagen}}" alt=""> 
+            <div class="card-body">
+            <p>{{lenguaje.titulo}}</p>  
+            <b>Aprendizaje:</b><p>{{lenguaje.nivel}}</p>
+            </div>
+          </div>
+    </div> 
+</div>
